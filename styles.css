@@ -1,0 +1,154 @@
+/* 会計実務マスター プライバシーポリシー・利用規約 */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic",
+               Meiryo, sans-serif;
+  color: #1c1c1e;
+  background: linear-gradient(180deg, #E0EBFF 0%, #F7FAFF 240px, #FFFFFF 400px);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 40px 0 24px;
+}
+.app-header h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #1a2368;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.app-header .tagline {
+  color: #6e6e73;
+  font-size: 15px;
+  margin: 6px 0 0;
+}
+
+/* Navigation */
+.doc-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin: 24px 0 32px;
+  padding: 6px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.doc-nav a {
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #3c3c43;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.doc-nav a.active {
+  background: linear-gradient(135deg, #478EFF, #2962E6);
+  color: white;
+  box-shadow: 0 4px 12px rgba(71, 142, 255, 0.35);
+}
+.doc-nav a:not(.active):hover {
+  background: rgba(0,0,0,0.04);
+}
+
+/* Article */
+article {
+  background: white;
+  border-radius: 18px;
+  padding: 40px 36px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+article h2 {
+  font-size: 28px;
+  margin: 0 0 8px;
+  color: #1c1c1e;
+}
+article .updated {
+  color: #8e8e93;
+  font-size: 13px;
+  margin: 0 0 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e5e5ea;
+}
+article section {
+  margin-bottom: 28px;
+}
+article h3 {
+  font-size: 17px;
+  color: #1c1c1e;
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+article p {
+  margin: 0 0 10px;
+  color: #3c3c43;
+  font-size: 15px;
+}
+article ul {
+  padding-left: 24px;
+  color: #3c3c43;
+  font-size: 15px;
+}
+article li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #8e8e93;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main { padding: 20px 16px 60px; }
+  .app-header h1 { font-size: 28px; }
+  article { padding: 24px 20px; }
+  article h2 { font-size: 22px; }
+  article h3 { font-size: 16px; }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: linear-gradient(180deg, #0F1C3D 0%, #1C1C1E 320px);
+    color: #F2F2F7;
+  }
+  article {
+    background: #1C1C1E;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+  }
+  article h2, article h3 { color: #F2F2F7; }
+  article p, article ul { color: #D1D1D6; }
+  article .updated { color: #8E8E93; border-color: #3A3A3C; }
+  .app-header h1 { color: #8EB4FF; }
+  .app-header .tagline { color: #AEAEB2; }
+  .doc-nav {
+    background: rgba(44, 44, 46, 0.6);
+  }
+  .doc-nav a { color: #D1D1D6; }
+  .doc-nav a:not(.active):hover { background: rgba(255,255,255,0.08); }
+  footer { color: #636366; }
+}
